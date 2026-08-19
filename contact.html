@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — AutoScale HQ</title>
+  <meta name="description" content="Get in touch with AutoScale HQ to discuss automating and scaling your service business.">
+  <meta property="og:title" content="Contact — AutoScale HQ">
+  <meta property="og:description" content="Get in touch with AutoScale HQ to discuss automating and scaling your service business.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- PAGE HERO -->
+  <header class="section page-hero section-dark">
+    <div class="container text-center">
+      <div class="section-label reveal-scale">// Contact</div>
+      <h1 class="section-title reveal">Let's Build Your Growth Engine</h1>
+    </div>
+  </header>
+
+  <!-- CONTACT SPLIT -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="contact-split grid grid-2 gap-8 reveal">
+        <!-- LEFT: Form -->
+        <div class="contact-form-card card-glass" style="padding: var(--space-8);">
+          <div class="form-content">
+            <h3 style="margin-bottom: var(--space-2);">Send us a message</h3>
+            <p class="text-muted" style="margin-bottom: var(--space-6);">Fill out the form and we'll get back to you within 24 hours.</p>
+            <form id="contact-form">
+              <div class="form-row grid grid-2 gap-4" style="margin-bottom: var(--space-4);">
+                <div class="form-group">
+                  <label class="form-label text-sm text-muted block" style="margin-bottom: var(--space-2);" for="name">Name *</label>
+                  <input type="text" id="name" name="name" class="form-input w-full" placeholder="John Doe" required style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--gray-700); background: var(--gray-800); color: var(--white);">
+                  <span class="form-error text-amber text-xs hidden"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label text-sm text-muted block" style="margin-bottom: var(--space-2);" for="email">Email *</label>
+                  <input type="email" id="email" name="email" class="form-input w-full" placeholder="john@company.com" required style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--gray-700); background: var(--gray-800); color: var(--white);">
+                  <span class="form-error text-amber text-xs hidden"></span>
+                </div>
+              </div>
+              <div class="form-row grid grid-2 gap-4" style="margin-bottom: var(--space-4);">
+                <div class="form-group">
+                  <label class="form-label text-sm text-muted block" style="margin-bottom: var(--space-2);" for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" class="form-input w-full" placeholder="+1 (555) 000-0000" style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--gray-700); background: var(--gray-800); color: var(--white);">
+                  <span class="form-error text-amber text-xs hidden"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label text-sm text-muted block" style="margin-bottom: var(--space-2);" for="company">Company</label>
+                  <input type="text" id="company" name="company" class="form-input w-full" placeholder="Your Company" style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--gray-700); background: var(--gray-800); color: var(--white);">
+                </div>
+              </div>
+              <div class="form-group" style="margin-bottom: var(--space-4);">
+                <label class="form-label text-sm text-muted block" style="margin-bottom: var(--space-2);" for="service">Service *</label>
+                <select id="service" name="service" class="form-select w-full" required style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--gray-700); background: var(--gray-800); color: var(--white);">
+                  <option value="">Select a service...</option>
+                  <option value="ghl">GoHighLevel Setup & Migration</option>
+                  <option value="automation">Workflow Automation</option>
+                  <option value="integrations">API Integrations</option>
+                  <option value="reporting">Reporting & Analytics</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+                <span class="form-error text-amber text-xs hidden"></span>
+              </div>
+              <div class="form-group" style="margin-bottom: var(--space-6);">
+                <label class="form-label text-sm text-muted block" style="margin-bottom: var(--space-2);" for="message">Message *</label>
+                <textarea id="message" name="message" class="form-textarea w-full" placeholder="Tell us about your business and what you're looking to automate..." required style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--gray-700); background: var(--gray-800); color: var(--white); min-height: 120px;"></textarea>
+                <span class="form-error text-amber text-xs hidden"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Message <span class="arrow">→</span></button>
+            </form>
+          </div>
+          <div class="form-success hidden text-center" style="padding: var(--space-8) 0;">
+            <div class="form-success-icon text-teal text-4xl" style="margin-bottom: var(--space-4);">✓</div>
+            <h3 style="margin-bottom: var(--space-2);">Message Sent!</h3>
+            <p class="text-muted">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Info -->
+        <div class="contact-info flex flex-col gap-6" data-stagger>
+          <div class="contact-info-card card-solid reveal flex items-start gap-4" style="padding: var(--space-6);">
+            <div class="contact-icon text-2xl">📧</div>
+            <div>
+              <h4 class="font-heading font-semibold" style="margin-bottom: var(--space-1);">Email</h4>
+              <p class="text-muted"><a href="mailto:admin@autoscalehqnow.com" class="text-teal">admin@autoscalehqnow.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card card-solid reveal flex items-start gap-4" style="padding: var(--space-6);">
+            <div class="contact-icon text-2xl">📞</div>
+            <div>
+              <h4 class="font-heading font-semibold" style="margin-bottom: var(--space-1);">Phone</h4>
+              <p class="text-muted"><a href="tel:+919910377360" class="text-teal">+91 99103 77360</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card card-solid reveal flex items-start gap-4" style="padding: var(--space-6);">
+            <div class="contact-icon text-2xl">📍</div>
+            <div>
+              <h4 class="font-heading font-semibold" style="margin-bottom: var(--space-1);">Location</h4>
+              <p class="text-muted">Remote-First — Serving clients worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact-form.js"></script>
+</body>
+</html>

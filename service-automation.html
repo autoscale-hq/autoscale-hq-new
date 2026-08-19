@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workflow Automation — AutoScale HQ</title>
+  <meta name="description" content="Custom workflow automation using Zapier, Make, and webhooks to eliminate repetitive tasks and scale your business operations.">
+  <meta property="og:title" content="Workflow Automation — AutoScale HQ">
+  <meta property="og:description" content="Custom workflow automation using Zapier, Make, and webhooks to eliminate repetitive tasks and scale your business operations.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- Header injected by JS -->
+
+  <main>
+    <section class="section service-hero-split section-dark pt-32 pb-20">
+      <div class="container">
+        <div class="grid grid-2 gap-12 items-center">
+          <div class="service-hero-content reveal-left">
+            <div class="breadcrumb mb-6 text-sm mono text-muted">
+              <a href="services.html" class="hover:text-teal transition-colors">Services</a> <span class="mx-2">/</span> <span class="text-white">Workflow Automation</span>
+            </div>
+            <h1 class="section-title text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gradient">Workflow Automation</h1>
+            <p class="text-xl text-muted mb-8">Connect your favorite apps and eliminate manual data entry. We design bulletproof, multi-step workflows that run your business on autopilot.</p>
+            <div class="flex flex-wrap gap-3 mb-10">
+              <span class="badge badge-teal">Zapier</span>
+              <span class="badge badge-teal">Make (Integromat)</span>
+              <span class="badge badge-teal">Webhooks</span>
+              <span class="badge badge-teal">n8n</span>
+            </div>
+            <a href="contact.html" class="btn btn-primary btn-lg btn-magnetic inline-flex items-center gap-2">
+              Book a Strategy Call <span>→</span>
+            </a>
+          </div>
+
+          <div class="service-hero-visual reveal-right">
+            <div class="terminal-block bg-[#0f111a] rounded-lg border border-gray-800 overflow-hidden shadow-2xl">
+              <div class="terminal-header bg-[#1a1d27] px-4 py-3 flex items-center gap-4 border-b border-gray-800">
+                <div class="flex gap-2">
+                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="text-xs text-gray-400 font-mono">workflow.js</div>
+              </div>
+              <div class="terminal-body p-6 font-mono text-sm leading-relaxed overflow-x-auto">
+<pre class="m-0"><span class="text-gray-500">// Lead Processing Automation</span>
+<span class="text-purple-400">export const</span> <span class="text-blue-400">processLead</span> = <span class="text-purple-400">async</span> (<span class="text-amber-300">payload</span>) => {
+  <span class="text-purple-400">try</span> {
+    <span class="text-gray-500">// 1. Parse incoming webhook</span>
+    <span class="text-purple-400">const</span> lead = <span class="text-amber-300">validateData</span>(payload);
+    
+    <span class="text-gray-500">// 2. Enrich data via Clearbit</span>
+    <span class="text-purple-400">const</span> enriched = <span class="text-purple-400">await</span> <span class="text-amber-300">enrichProfile</span>(lead.email);
+    
+    <span class="text-gray-500">// 3. Route to sales team in Slack</span>
+    <span class="text-purple-400">if</span> (enriched.companySize > <span class="text-orange-400">50</span>) {
+      <span class="text-purple-400">await</span> <span class="text-amber-300">notifySlack</span>(<span class="text-green-400">"#enterprise-leads"</span>, enriched);
+    }
+    
+    <span class="text-purple-400">return</span> { <span class="text-blue-400">status:</span> <span class="text-green-400">"success"</span>, <span class="text-blue-400">routed:</span> <span class="text-orange-400">true</span> };
+  } <span class="text-purple-400">catch</span> (error) {
+    <span class="text-purple-400">await</span> <span class="text-amber-300">logError</span>(error);
+  }
+};</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-medium">
+      <div class="container">
+        <div class="section-header text-center mb-16 reveal">
+          <div class="section-label mono text-teal mb-4">// Capabilities</div>
+          <h2 class="section-title text-4xl font-bold mb-4">Advanced Automation Solutions</h2>
+          <p class="section-subtitle text-muted max-w-2xl mx-auto">We build resilient, scalable automations that handle edge cases and error states gracefully.</p>
+        </div>
+
+        <div class="feature-grid grid grid-2 gap-y-12 gap-x-16" data-stagger="true">
+          <div class="feature-item reveal flex gap-4">
+            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
+            <div class="feature-content">
+              <h3 class="text-xl font-bold mb-2">Zapier/Make Integration</h3>
+              <p class="text-muted">Expert architecture of complex Zapier and Make (Integromat) scenarios that connect hundreds of SaaS applications securely and efficiently.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal flex gap-4">
+            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
+            <div class="feature-content">
+              <h3 class="text-xl font-bold mb-2">Multi-step Workflows</h3>
+              <p class="text-muted">We build extensive, 20+ step workflows that handle data enrichment, document generation, and cross-platform synchronization seamlessly.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal flex gap-4">
+            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
+            <div class="feature-content">
+              <h3 class="text-xl font-bold mb-2">Conditional Logic</h3>
+              <p class="text-muted">Intelligent routing and filtering to ensure data is processed dynamically based on precise business rules and variable conditions.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal flex gap-4">
+            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
+            <div class="feature-content">
+              <h3 class="text-xl font-bold mb-2">API Webhooks</h3>
+              <p class="text-muted">Custom webhook receivers and processors for real-time, low-latency data transfer between systems without relying on polling delays.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal flex gap-4">
+            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
+            <div class="feature-content">
+              <h3 class="text-xl font-bold mb-2">Error Handling</h3>
+              <p class="text-muted">Robust fallback mechanisms, automatic retries, and data validation to ensure your automations don't break when third-party APIs fail.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal flex gap-4">
+            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
+            <div class="feature-content">
+              <h3 class="text-xl font-bold mb-2">Notification Systems</h3>
+              <p class="text-muted">Automated alerting via Slack, Teams, or SMS to keep your team informed of critical events, lead assignments, or system statuses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark py-20">
+      <div class="container">
+        <div class="card-glass p-10 md:p-14 rounded-2xl border border-gray-800 reveal-scale max-w-4xl mx-auto relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+          <div class="relative z-10 grid grid-1 md:grid-2 gap-10 items-center">
+            <div>
+              <div class="text-amber text-sm font-bold tracking-wider uppercase mb-3">Case Study</div>
+              <h3 class="text-3xl font-bold mb-4">Elevate Logistics</h3>
+              <p class="text-muted mb-6">Elevate's dispatch team was spending hours manually re-entering order data from Shopify into their custom fulfillment portal. We built a robust Make scenario utilizing webhooks and conditional logic that automated the entire flow, entirely eliminating data entry errors.</p>
+              <div class="flex gap-6 mt-8">
+                <div>
+                  <div class="text-3xl font-bold text-teal mb-1">40hrs</div>
+                  <div class="text-sm text-gray-400">Saved Weekly</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-teal mb-1">0%</div>
+                  <div class="text-sm text-gray-400">Manual Entry Errors</div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <!-- Placeholder for visual -->
+              <div class="aspect-square bg-gray-900 rounded-xl border border-gray-800 flex items-center justify-center relative shadow-inner">
+                <div class="text-6xl">⚙️</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-banner section-gradient py-20">
+      <div class="container text-center reveal-scale">
+        <h2 class="text-4xl font-bold mb-6">Stop doing busywork.</h2>
+        <p class="text-xl text-muted mb-8 max-w-2xl mx-auto">Let our engineers connect your stack so your team can focus on high-leverage activities.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg btn-magnetic inline-flex items-center gap-2">
+          Automate Your Business <span>→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer injected by JS -->
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
