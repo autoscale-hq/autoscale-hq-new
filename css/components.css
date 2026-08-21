@@ -250,7 +250,8 @@
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 50px;
+  height: 72px;
+  max-height: calc(var(--nav-height) - 14px);
   width: auto;
   border-radius: var(--radius-sm);
   object-fit: contain;
@@ -393,7 +394,9 @@
 .footer-brand { padding-right: var(--space-6); }
 
 .footer-brand-logo {
-  height: 40px;
+  height: 80px;
+  width: auto;
+  object-fit: contain;
   margin-bottom: var(--space-4);
 }
 
@@ -1109,14 +1112,34 @@
 .newsletter-form {
   display: flex;
   gap: var(--space-3);
-  max-width: 460px;
+  max-width: 480px;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
 }
 .newsletter-form .form-input {
   flex: 1;
+  max-width: 320px;
+  height: 48px;
+}
+.newsletter-form .btn {
+  height: 48px;
+  padding: 0 var(--space-6);
+  white-space: nowrap;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .newsletter-form {
     flex-direction: column;
+    align-items: stretch;
+    max-width: 320px;
+    width: 100%;
+  }
+  .newsletter-form .form-input {
+    width: 100%;
+    max-width: 100%;
+  }
+  .newsletter-form .btn {
+    width: 100%;
   }
 }

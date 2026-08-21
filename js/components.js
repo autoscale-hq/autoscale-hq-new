@@ -185,7 +185,7 @@
             <p>We help service businesses automate their lead management, follow-ups, and booking systems so they can scale without hiring more staff.</p>
             <p style="margin-top:12px; font-size: 0.875rem; color: var(--color-text-muted);">
               <a href="mailto:admin@autoscalehqnow.com" style="color: var(--color-teal);">admin@autoscalehqnow.com</a><br>
-              <a href="tel:+919910377360" style="color: var(--color-text-muted);">+91 99103 77360</a>
+              <a href="tel:+919354281554" style="color: var(--color-text-muted);">+91 93542 81554</a>
             </p>
             <div class="footer-socials">
               <a href="#" class="footer-social-link" aria-label="LinkedIn">in</a>

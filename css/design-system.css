@@ -93,7 +93,7 @@
   /* Layout */
   --container-max: 1200px;
   --container-narrow: 800px;
-  --nav-height: 80px;
+  --nav-height: 86px;
 }
 
 /* --- Modern Reset --- */
@@ -314,5 +314,5 @@ strong { font-weight: 600; }
   .grid-2 { grid-template-columns: 1fr; }
   .section { padding: var(--space-9) 0; }
   .container { padding-inline: var(--space-4); }
-  :root { --nav-height: 70px; }
+  :root { --nav-height: 76px; }
 }
