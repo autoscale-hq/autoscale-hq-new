@@ -597,6 +597,62 @@
 }
 
 /* ========== PRICING PAGE ========== */
+.pricing-tab-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-8);
+  background: rgba(27, 79, 191, 0.04);
+  padding: var(--space-2);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.pricing-tab-btn {
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-lg);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.pricing-tab-btn:hover {
+  color: var(--color-text);
+  background: rgba(27, 79, 191, 0.06);
+}
+
+.pricing-tab-btn.active {
+  background: var(--color-teal);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(27, 79, 191, 0.25);
+}
+
+.pricing-tab-panel {
+  display: none;
+}
+
+.pricing-tab-panel.active {
+  display: block;
+  animation: tabFadeIn 0.35s ease-in-out;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .pricing-table-wrapper {
   background: #FFFFFF;
   border: 1px solid var(--color-border);
