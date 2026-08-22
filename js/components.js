@@ -13,6 +13,7 @@
   const NAV_LINKS = [
     { label: 'Home', href: 'index.html' },
     { label: 'Services', href: 'services.html' },
+    { label: 'Pricing', href: 'pricing.html' },
     { label: 'Portfolio', href: 'portfolio.html' },
     { label: 'About', href: 'about.html' },
     { label: 'Blog', href: 'blog.html' },
@@ -33,6 +34,7 @@
       title: 'Company',
       links: [
         { label: 'About Us', href: 'about.html' },
+        { label: 'Pricing', href: 'pricing.html' },
         { label: 'Portfolio', href: 'portfolio.html' },
         { label: 'Testimonials', href: 'testimonials.html' },
         { label: 'Blog', href: 'blog.html' },

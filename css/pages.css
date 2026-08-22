@@ -595,3 +595,100 @@
   color: var(--color-text-muted);
   margin-bottom: var(--space-6);
 }
+
+/* ========== PRICING PAGE ========== */
+.pricing-table-wrapper {
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow-x: auto;
+  margin-top: var(--space-6);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 650px;
+}
+
+.pricing-table th {
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.pricing-table td {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  vertical-align: top;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tr:hover td {
+  background: rgba(27, 79, 191, 0.03);
+}
+
+.pricing-table .pkg-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+.pricing-table .pkg-price {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-xl);
+  color: var(--color-teal);
+  white-space: nowrap;
+}
+
+.pricing-table .pkg-unit {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 400;
+  display: block;
+}
+
+.pricing-table .pkg-ideal {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.pricing-deliverables {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.pricing-deliverables li {
+  position: relative;
+  padding-left: var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.pricing-deliverables li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-teal);
+  font-weight: 700;
+}
