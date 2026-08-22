@@ -255,9 +255,13 @@ strong { font-weight: 600; }
   font-size: var(--text-lg);
   color: var(--color-text-muted);
   max-width: 600px;
+  margin-inline: auto;
 }
 
 .section-header { margin-bottom: var(--space-9); }
+.section-header.text-center .section-subtitle {
+  margin-inline: auto;
+}
 
 /* --- Text Utilities --- */
 .text-teal   { color: var(--color-teal); }
