@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GoHighLevel Setup & Migration — AutoScale HQ</title>
+  <title>GoHighLevel Setup &amp; Migration — AutoScale HQ</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="shortcut icon" href="favicon.ico">
   <meta name="description" content="Expert GoHighLevel setup, migration, and optimization services. Maximize your CRM's potential with custom pipelines and automations.">
-  <meta property="og:title" content="GoHighLevel Setup & Migration — AutoScale HQ">
+  <meta property="og:title" content="GoHighLevel Setup &amp; Migration — AutoScale HQ">
   <meta property="og:description" content="Expert GoHighLevel setup, migration, and optimization services. Maximize your CRM's potential with custom pipelines and automations.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,47 +25,50 @@
   <!-- Header injected by JS -->
 
   <main>
-    <section class="section service-hero-split section-dark pt-32 pb-20">
+    <!-- HERO SPLIT -->
+    <section class="section section-dark">
       <div class="container">
-        <div class="grid grid-2 gap-12 items-center">
+        <div class="service-hero-split">
+          <!-- Left: Content -->
           <div class="service-hero-content reveal-left">
-            <div class="breadcrumb mb-6 text-sm mono text-muted">
-              <a href="services.html" class="hover:text-teal transition-colors">Services</a> <span class="mx-2">/</span> <span class="text-white">GoHighLevel Setup</span>
+            <div class="breadcrumb" style="display:flex; align-items:center; gap:var(--space-2); margin-bottom:var(--space-5); font-size:var(--text-sm); font-family:var(--font-mono); color:var(--color-text-muted);">
+              <a href="services.html" style="color:var(--color-teal);">Services</a>
+              <span>/</span>
+              <span>GoHighLevel Setup</span>
             </div>
-            <h1 class="section-title text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gradient">GoHighLevel Setup & Migration</h1>
-            <p class="text-xl text-muted mb-8">We engineer highly optimized GoHighLevel workspaces that centralize your marketing, sales, and client fulfillment into one powerful platform.</p>
-            <div class="flex flex-wrap gap-3 mb-10">
+            <h1 class="section-title text-gradient" style="font-size:clamp(2rem, 5vw, 3.5rem); font-weight:700; margin-bottom:var(--space-5);">GoHighLevel Setup &amp; Migration</h1>
+            <p style="font-size:var(--text-lg); color:var(--color-text-muted); margin-bottom:var(--space-7);">We engineer highly optimised GoHighLevel workspaces that centralise your marketing, sales, and client fulfilment into one powerful platform.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-8);">
               <span class="badge badge-teal">Snapshots</span>
               <span class="badge badge-teal">SaaS Mode</span>
               <span class="badge badge-teal">White-labeling</span>
               <span class="badge badge-teal">Workflows</span>
             </div>
-            <a href="contact.html" class="btn btn-primary btn-lg btn-magnetic inline-flex items-center gap-2">
-              Book a Strategy Call <span>→</span>
-            </a>
+            <a href="contact.html" class="btn btn-primary btn-lg btn-magnetic">Book a Strategy Call <span class="arrow">→</span></a>
           </div>
 
+          <!-- Right: Terminal Visual -->
           <div class="service-hero-visual reveal-right">
-            <div class="terminal-block bg-[#0f111a] rounded-lg border border-gray-800 overflow-hidden shadow-2xl">
-              <div class="terminal-header bg-[#1a1d27] px-4 py-3 flex items-center gap-4 border-b border-gray-800">
-                <div class="flex gap-2">
-                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div class="w-3 h-3 rounded-full bg-amber-500"></div>
-                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            <div class="terminal-block">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
                 </div>
-                <div class="text-xs text-gray-400 font-mono">ghl-config.yaml</div>
+                <span class="terminal-title">ghl-config.yaml</span>
               </div>
-              <div class="terminal-body p-6 font-mono text-sm leading-relaxed overflow-x-auto">
-<pre class="m-0"><span class="text-gray-500">// GoHighLevel Pipeline Setup</span>
-<span class="text-blue-400">pipeline:</span> <span class="text-green-400">"New Lead Intake"</span>
-<span class="text-blue-400">stages:</span>
-  <span class="text-gray-300">-</span> <span class="text-blue-400">name:</span> <span class="text-green-400">"New Lead"</span>
-    <span class="text-blue-400">automation:</span> <span class="text-amber-300">trigger_sms</span>
-  <span class="text-gray-300">-</span> <span class="text-blue-400">name:</span> <span class="text-green-400">"Qualified"</span>
-    <span class="text-blue-400">automation:</span> <span class="text-amber-300">send_proposal</span>  
-  <span class="text-gray-300">-</span> <span class="text-blue-400">name:</span> <span class="text-green-400">"Booked"</span>
-    <span class="text-blue-400">automation:</span> <span class="text-amber-300">calendar_sync</span>
-<span class="text-blue-400">status:</span> <span class="text-teal-400">ACTIVE ✓</span></pre>
+              <div class="terminal-body">
+<pre style="margin:0; line-height:1.8;"><span class="line-comment"># GoHighLevel Pipeline Setup</span>
+<span class="line-keyword">pipeline:</span> <span class="line-string">"New Lead Intake"</span>
+<span class="line-keyword">stages:</span>
+  - <span class="line-keyword">name:</span> <span class="line-string">"New Lead"</span>
+    <span class="line-keyword">automation:</span> <span class="line-func">trigger_sms</span>
+  - <span class="line-keyword">name:</span> <span class="line-string">"Qualified"</span>
+    <span class="line-keyword">automation:</span> <span class="line-func">send_proposal</span>
+  - <span class="line-keyword">name:</span> <span class="line-string">"Booked"</span>
+    <span class="line-keyword">automation:</span> <span class="line-func">calendar_sync</span>
+<span class="line-keyword">status:</span> <span class="line-string">ACTIVE ✓</span></pre>
               </div>
             </div>
           </div>
@@ -73,112 +76,109 @@
       </div>
     </section>
 
+    <!-- SERVICES LIST -->
     <section class="section section-medium">
       <div class="container">
-        <div class="section-header text-center mb-16 reveal">
-          <h2 class="section-title text-4xl font-bold mb-4">Comprehensive GHL Services</h2>
-          <p class="section-subtitle text-muted max-w-2xl mx-auto">Everything you need to migrate, launch, and scale your operations on GoHighLevel.</p>
+        <div class="section-header text-center reveal">
+          <h2 class="section-title">Comprehensive GHL Services</h2>
+          <p class="section-subtitle mx-auto">Everything you need to migrate, launch, and scale your operations on GoHighLevel.</p>
         </div>
 
-        <div class="feature-grid grid grid-2 gap-y-12 gap-x-16" data-stagger="true">
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Full CRM Migration</h3>
+        <div class="feature-grid" data-stagger="true">
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
+            <div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Full CRM Migration</h3>
               <p class="text-muted">Seamlessly transfer your contacts, pipelines, and historical data from Hubspot, Pipedrive, ActiveCampaign, or any other platform with zero data loss.</p>
             </div>
           </div>
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Pipeline Architecture</h3>
-              <p class="text-muted">Custom-designed sales and fulfillment pipelines that perfectly mirror your unique business processes and team structures.</p>
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
+            <div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Pipeline Architecture</h3>
+              <p class="text-muted">Custom-designed sales and fulfilment pipelines that perfectly mirror your unique business processes and team structures.</p>
             </div>
           </div>
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Automated Follow-ups</h3>
-              <p class="text-muted">Complex, multi-channel (SMS, Email, Voicemail) nurturing campaigns that trigger based on precise user behavior and pipeline stages.</p>
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
+            <div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Automated Follow-ups</h3>
+              <p class="text-muted">Complex, multi-channel (SMS, Email, Voicemail) nurturing campaigns that trigger based on precise user behaviour and pipeline stages.</p>
             </div>
           </div>
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Custom Forms & Surveys</h3>
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
+            <div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Custom Forms &amp; Surveys</h3>
               <p class="text-muted">High-converting intake forms and qualification surveys with advanced conditional logic tailored to capture essential lead information.</p>
             </div>
           </div>
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Calendar Integration</h3>
-              <p class="text-muted">Advanced round-robin scheduling, multi-calendar setups for teams, and automated appointment reminders to minimize no-shows.</p>
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
+            <div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Calendar Integration</h3>
+              <p class="text-muted">Advanced round-robin scheduling, multi-calendar setups for teams, and automated appointment reminders to minimise no-shows.</p>
             </div>
           </div>
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Reporting Setup</h3>
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
+            <div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Reporting Setup</h3>
               <p class="text-muted">Clear, insightful dashboards that track your most important KPIs, from lead acquisition cost to pipeline velocity and close rates.</p>
             </div>
           </div>
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Team Training</h3>
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
+            <div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Team Training</h3>
               <p class="text-muted">Comprehensive onboarding sessions and custom SOP documentation to ensure your team adopts the new system with confidence.</p>
             </div>
           </div>
-          <div class="feature-item reveal flex gap-4">
-            <div class="feature-check text-teal text-2xl flex-shrink-0">✓</div>
-            <div class="feature-content">
-              <h3 class="text-xl font-bold mb-2">Ongoing Support</h3>
-              <p class="text-muted">Dedicated retainer options for continuous optimization, troubleshooting, and building new features as your business scales.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark py-20">
-      <div class="container">
-        <div class="card-glass p-10 md:p-14 rounded-2xl border border-gray-800 reveal-scale max-w-4xl mx-auto relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-          <div class="relative z-10 grid grid-1 md:grid-2 gap-10 items-center">
+          <div class="feature-item reveal" style="display:flex; gap:var(--space-4);">
+            <div style="color:var(--color-teal); font-size:1.5rem; flex-shrink:0;">✓</div>
             <div>
-              <div class="text-amber text-sm font-bold tracking-wider uppercase mb-3">Case Study</div>
-              <h3 class="text-3xl font-bold mb-4">Apex Marketing Group</h3>
-              <p class="text-muted mb-6">We migrated Apex from a fractured tech stack (ActiveCampaign + Calendly + Pipedrive) into a unified GoHighLevel system, reducing their software overhead by $850/mo while increasing their lead-to-close rate by 24% through automated SMS follow-ups.</p>
-              <div class="flex gap-6 mt-8">
-                <div>
-                  <div class="text-3xl font-bold text-teal mb-1">24%</div>
-                  <div class="text-sm text-gray-400">Increase in Conversions</div>
-                </div>
-                <div>
-                  <div class="text-3xl font-bold text-teal mb-1">15hrs</div>
-                  <div class="text-sm text-gray-400">Saved Per Week</div>
-                </div>
-              </div>
-            </div>
-            <div class="hidden md:block">
-              <!-- Placeholder for visual -->
-              <div class="aspect-square bg-gray-900 rounded-xl border border-gray-800 flex items-center justify-center relative shadow-inner">
-                <div class="text-6xl">📈</div>
-              </div>
+              <h3 style="font-size:var(--text-xl); font-weight:700; margin-bottom:var(--space-2);">Ongoing Support</h3>
+              <p class="text-muted">Dedicated retainer options for continuous optimisation, troubleshooting, and building new features as your business scales.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section cta-banner section-gradient py-20">
-      <div class="container text-center reveal-scale">
-        <h2 class="text-4xl font-bold mb-6">Ready to master GoHighLevel?</h2>
-        <p class="text-xl text-muted mb-8 max-w-2xl mx-auto">Let's build a tailored CRM infrastructure that empowers your team and drives predictable revenue.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg btn-magnetic inline-flex items-center gap-2">
-          Schedule Your Consultation <span>→</span>
-        </a>
+    <!-- CASE STUDY -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="card-glass reveal" style="max-width:900px; margin-inline:auto; padding:var(--space-9);">
+          <div class="grid gap-8" style="grid-template-columns: 1fr 1fr; align-items:center;">
+            <div>
+              <div style="color:var(--color-amber); font-size:var(--text-sm); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:var(--space-3);">Case Study</div>
+              <h3 style="font-size:clamp(1.5rem, 3vw, 2rem); font-weight:700; margin-bottom:var(--space-4);">Apex Marketing Group</h3>
+              <p class="text-muted" style="margin-bottom:var(--space-6);">We migrated Apex from a fractured tech stack (ActiveCampaign + Calendly + Pipedrive) into a unified GoHighLevel system, reducing their software overhead by $850/mo while increasing their lead-to-close rate by 24% through automated SMS follow-ups.</p>
+              <div style="display:flex; gap:var(--space-8); margin-top:var(--space-6);">
+                <div>
+                  <div style="font-size:clamp(1.5rem, 3vw, 2rem); font-weight:700; color:var(--color-teal); margin-bottom:var(--space-1);">24%</div>
+                  <div style="font-size:var(--text-sm); color:var(--color-text-muted);">Increase in Conversions</div>
+                </div>
+                <div>
+                  <div style="font-size:clamp(1.5rem, 3vw, 2rem); font-weight:700; color:var(--color-teal); margin-bottom:var(--space-1);">15hrs</div>
+                  <div style="font-size:var(--text-sm); color:var(--color-text-muted);">Saved Per Week</div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:center; background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-xl); padding:var(--space-9); aspect-ratio:1;">
+              <span style="font-size:4rem;">📈</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="section cta-banner section-gradient text-center">
+      <div class="container reveal">
+        <h2 class="section-title" style="font-size:clamp(1.75rem, 4vw, 2.5rem); font-weight:700; margin-bottom:var(--space-5);">Ready to master GoHighLevel?</h2>
+        <p style="font-size:var(--text-lg); color:var(--color-text-muted); margin-bottom:var(--space-7); max-width:600px; margin-inline:auto;">Let's build a tailored CRM infrastructure that empowers your team and drives predictable revenue.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg btn-magnetic">Schedule Your Consultation <span class="arrow">→</span></a>
       </div>
     </section>
   </main>

@@ -111,6 +111,12 @@
 .terminal-body .line-string  { color: var(--color-amber); }
 .terminal-body .line-func    { color: #B392F0; }
 
+.terminal-dots {
+  display: flex;
+  gap: var(--space-1);
+  align-items: center;
+}
+
 /* Feature comparison grid */
 .feature-grid {
   display: grid;
@@ -122,7 +128,10 @@
   .services-grid { grid-template-columns: 1fr; }
   .service-hero-split { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: 1fr; }
+  .case-study-grid { grid-template-columns: 1fr !important; }
+  .case-study-visual { display: none; }
 }
+
 
 /* ========== PORTFOLIO PAGE ========== */
 .portfolio-grid {
