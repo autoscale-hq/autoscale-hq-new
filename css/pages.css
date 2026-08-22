@@ -600,20 +600,27 @@
 .pricing-tab-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: nowrap;
   margin-bottom: var(--space-8);
   background: rgba(27, 79, 191, 0.04);
   padding: var(--space-2);
   border-radius: var(--radius-xl);
   border: 1px solid var(--color-border);
-  max-width: 960px;
+  max-width: 1100px;
   margin-inline: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.pricing-tab-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .pricing-tab-btn {
-  padding: var(--space-3) var(--space-6);
+  flex: 1 1 0;
+  padding: var(--space-3) var(--space-3);
   font-family: var(--font-heading);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -625,7 +632,9 @@
   transition: all var(--transition-fast);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
+  white-space: nowrap;
 }
 
 .pricing-tab-btn:hover {
