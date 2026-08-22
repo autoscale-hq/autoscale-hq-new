@@ -78,9 +78,7 @@
 
 /* Glassmorphism card with mouse-tracking glow */
 .card-glass {
-  background: rgba(237, 240, 247, 0.85);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: var(--space-7);
@@ -741,7 +739,7 @@
 /* ========== PAGE HERO ========== */
 .page-hero {
   padding: calc(var(--nav-height) + var(--space-11)) 0 var(--space-11);
-  background: linear-gradient(180deg, var(--color-ink) 0%, var(--color-ink-light) 100%);
+  background: #FFFFFF;
   text-align: center;
   position: relative;
   overflow: hidden;

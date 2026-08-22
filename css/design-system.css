@@ -7,12 +7,12 @@
 :root {
   /* Colors — Primary */
   --color-ink: #FFFFFF;
-  --color-ink-light: #F5F7FA;
-  --color-surface: #EDF0F7;
-  --color-surface-2: #E2E7F0;
-  --color-surface-3: #D8DEE9;
-  --color-paper: #0B0F14;
-  --color-paper-dark: #1A2030;
+  --color-ink-light: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #FFFFFF;
+  --color-surface-3: #FFFFFF;
+  --color-paper: #FFFFFF;
+  --color-paper-dark: #FFFFFF;
 
   /* Colors — Accents */
   --color-teal: #1B4FBF;
@@ -219,22 +219,22 @@ strong { font-weight: 600; }
   position: relative;
 }
 
-.section-dark   { background-color: var(--color-ink); }
-.section-medium { background-color: var(--color-ink-light); }
+.section-dark   { background-color: #FFFFFF; }
+.section-medium { background-color: #FFFFFF; }
 
 .section-light {
-  background-color: var(--color-paper);
-  color: var(--color-text-dark);
+  background-color: #FFFFFF;
+  color: var(--color-text);
 }
 .section-light h1,
 .section-light h2,
 .section-light h3,
-.section-light h4 { color: var(--color-text-dark); }
-.section-light p  { color: #B0BEC5; }
-.section-light .section-label { color: var(--color-teal-light); }
+.section-light h4 { color: var(--color-text); }
+.section-light p  { color: var(--color-text-muted); }
+.section-light .section-label { color: var(--color-teal); }
 
 .section-gradient {
-  background: linear-gradient(135deg, var(--color-ink) 0%, var(--color-surface) 50%, var(--color-ink) 100%);
+  background: #FFFFFF;
 }
 
 /* Section header pattern */

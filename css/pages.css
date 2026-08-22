@@ -598,7 +598,7 @@
 
 /* ========== PRICING PAGE ========== */
 .pricing-table-wrapper {
-  background: var(--color-paper);
+  background: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   overflow-x: auto;
@@ -611,10 +611,11 @@
   border-collapse: collapse;
   text-align: left;
   min-width: 650px;
+  background: #FFFFFF;
 }
 
 .pricing-table th {
-  background: var(--color-surface);
+  background: #FFFFFF;
   color: var(--color-text);
   font-family: var(--font-heading);
   font-weight: 700;
@@ -631,6 +632,7 @@
   color: var(--color-text-muted);
   font-size: var(--text-sm);
   vertical-align: top;
+  background: #FFFFFF;
 }
 
 .pricing-table tr:last-child td {
