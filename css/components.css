@@ -736,12 +736,11 @@
 }
 
 .testimonial-quote {
-  color: var(--color-teal);
-  font-size: var(--text-4xl);
-  line-height: 1;
-  margin-bottom: var(--space-2);
-  opacity: 0.4;
-  font-family: Georgia, serif;
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--space-5);
+  font-style: italic;
 }
 
 .testimonial-stars {
@@ -781,7 +780,7 @@
 .testimonial-name {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--color-text);
 }
 
