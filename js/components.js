@@ -86,7 +86,7 @@
         </nav>
 
         <div class="header-cta">
-          <a href="contact.html" class="btn btn-primary btn-magnetic">
+          <a href="https://calendly.com/autoscalehqnow-info/30min" target="_blank" rel="noopener" class="btn btn-primary btn-magnetic">
             Book a Call <span class="arrow">→</span>
           </a>
         </div>
@@ -103,7 +103,7 @@
           (link) =>
             `<a href="${link.href}" class="nav-item ${isActive(link.href) ? 'active' : ''}">${link.label}</a>`
         ).join('')}
-        <a href="contact.html" class="btn btn-primary" style="margin-top: auto;">
+        <a href="https://calendly.com/autoscalehqnow-info/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: auto;">
           Book a Call <span class="arrow">→</span>
         </a>
       </nav>
