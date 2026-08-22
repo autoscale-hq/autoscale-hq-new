@@ -36,10 +36,10 @@
       <div class="container">
         <div class="grid grid-2 gap-8 services-grid" data-stagger="true">
           <!-- Service 1 -->
-          <div class="card-glow reveal">
+          <div class="card-glow reveal" id="ghl">
             <div class="card-glass h-full flex flex-col p-8">
               <div class="card-icon text-4xl mb-6">⚡</div>
-              <h2 class="card-title text-2xl mb-4 font-bold">GoHighLevel Setup & Migration</h2>
+              <h2 class="card-title text-2xl mb-4 font-bold">GoHighLevel Setup &amp; Migration</h2>
               <p class="card-text text-muted mb-6 flex-grow">We build and migrate your entire marketing ecosystem into GoHighLevel. Maximize your CRM's potential with custom pipelines, campaigns, and funnels.</p>
               <div class="service-tags flex flex-wrap gap-2 mb-8">
                 <span class="badge badge-teal">Snapshots</span>
@@ -54,7 +54,7 @@
           </div>
 
           <!-- Service 2 -->
-          <div class="card-glow reveal">
+          <div class="card-glow reveal" id="workflow">
             <div class="card-glass h-full flex flex-col p-8">
               <div class="card-icon text-4xl mb-6">🔧</div>
               <h2 class="card-title text-2xl mb-4 font-bold">Workflow Automation</h2>
@@ -72,10 +72,10 @@
           </div>
 
           <!-- Service 3 -->
-          <div class="card-glow reveal">
+          <div class="card-glow reveal" id="integrations">
             <div class="card-glass h-full flex flex-col p-8">
               <div class="card-icon text-4xl mb-6">🔌</div>
-              <h2 class="card-title text-2xl mb-4 font-bold">API Integrations & Custom Builds</h2>
+              <h2 class="card-title text-2xl mb-4 font-bold">API Integrations &amp; Custom Builds</h2>
               <p class="card-text text-muted mb-6 flex-grow">Need something beyond off-the-shelf tools? We develop custom API integrations and tailored scripts to solve your most complex operational challenges.</p>
               <div class="service-tags flex flex-wrap gap-2 mb-8">
                 <span class="badge badge-teal">REST API</span>
@@ -83,17 +83,17 @@
                 <span class="badge badge-teal">Node.js</span>
                 <span class="badge badge-teal">Custom Scripts</span>
               </div>
-              <a href="#" class="card-link text-teal font-medium flex items-center gap-2 hover:text-white transition-colors mt-auto">
-                Explore Service <span>→</span>
+              <a href="pricing.html#automation-pricing" class="card-link text-teal font-medium flex items-center gap-2 hover:text-white transition-colors mt-auto">
+                View Pricing <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Service 4 -->
-          <div class="card-glow reveal">
+          <div class="card-glow reveal" id="reporting">
             <div class="card-glass h-full flex flex-col p-8">
               <div class="card-icon text-4xl mb-6">📊</div>
-              <h2 class="card-title text-2xl mb-4 font-bold">Reporting Dashboards & Analytics</h2>
+              <h2 class="card-title text-2xl mb-4 font-bold">Reporting Dashboards &amp; Analytics</h2>
               <p class="card-text text-muted mb-6 flex-grow">Turn your raw data into actionable insights. We build real-time reporting dashboards so you always know exactly how your business is performing.</p>
               <div class="service-tags flex flex-wrap gap-2 mb-8">
                 <span class="badge badge-teal">Looker Studio</span>
@@ -101,8 +101,44 @@
                 <span class="badge badge-teal">KPI Tracking</span>
                 <span class="badge badge-teal">Data Viz</span>
               </div>
-              <a href="#" class="card-link text-teal font-medium flex items-center gap-2 hover:text-white transition-colors mt-auto">
-                Explore Service <span>→</span>
+              <a href="pricing.html#ghl-pricing" class="card-link text-teal font-medium flex items-center gap-2 hover:text-white transition-colors mt-auto">
+                View Pricing <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="card-glow reveal" id="webdev">
+            <div class="card-glass h-full flex flex-col p-8">
+              <div class="card-icon text-4xl mb-6">💻</div>
+              <h2 class="card-title text-2xl mb-4 font-bold">Website and App Development</h2>
+              <p class="card-text text-muted mb-6 flex-grow">High-converting landing pages, business websites, and web apps built specifically to convert traffic into leads and sync directly with your CRM.</p>
+              <div class="service-tags flex flex-wrap gap-2 mb-8">
+                <span class="badge badge-teal">Responsive</span>
+                <span class="badge badge-teal">CMS</span>
+                <span class="badge badge-teal">GHL Funnels</span>
+                <span class="badge badge-teal">Web Apps</span>
+              </div>
+              <a href="pricing.html#website-pricing" class="card-link text-teal font-medium flex items-center gap-2 hover:text-white transition-colors mt-auto">
+                View Pricing <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="card-glow reveal" id="custom">
+            <div class="card-glass h-full flex flex-col p-8">
+              <div class="card-icon text-4xl mb-6">⚙️</div>
+              <h2 class="card-title text-2xl mb-4 font-bold">Custom Development</h2>
+              <p class="card-text text-muted mb-6 flex-grow">Bespoke software architecture, custom portals, middleware, and specialized web applications tailored to your exact business requirements.</p>
+              <div class="service-tags flex flex-wrap gap-2 mb-8">
+                <span class="badge badge-teal">Custom Portals</span>
+                <span class="badge badge-teal">Middleware</span>
+                <span class="badge badge-teal">Backend APIs</span>
+                <span class="badge badge-teal">SaaS MVPs</span>
+              </div>
+              <a href="pricing.html#add-ons" class="card-link text-teal font-medium flex items-center gap-2 hover:text-white transition-colors mt-auto">
+                View Pricing <span>→</span>
               </a>
             </div>
           </div>
@@ -141,14 +177,13 @@
       <div class="container text-center reveal-scale">
         <h2 class="text-4xl font-bold mb-6">Ready to scale your operations?</h2>
         <p class="text-xl text-muted mb-8 max-w-2xl mx-auto">Book a free discovery call to discuss your bottlenecks and see how custom automation can transform your business.</p>
-        <a href="https://calendly.com/autoscalehqnow-info/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-magnetic inline-flex items-center gap-2">
-          Get Your Free Audit <span>→</span>
+        <a href="https://calendly.com/autoscalehqnow-info/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg inline-flex items-center gap-2">
+          Book a Free Audit <span class="arrow">→</span>
         </a>
       </div>
     </section>
   </main>
 
-  <!-- Footer injected by JS -->
   <script src="js/components.js"></script>
   <script src="js/animations.js"></script>
 </body>

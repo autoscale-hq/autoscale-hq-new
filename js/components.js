@@ -12,7 +12,18 @@
 
   const NAV_LINKS = [
     { label: 'Home', href: 'index.html' },
-    { label: 'Services', href: 'services.html' },
+    {
+      label: 'Services',
+      href: 'services.html',
+      children: [
+        { label: 'GoHighLevel Setup & Migration', href: 'service-ghl.html' },
+        { label: 'Workflow Automation', href: 'service-automation.html' },
+        { label: 'API Integrations & Custom Builds', href: 'services.html#integrations' },
+        { label: 'Reporting Dashboards & Analytics', href: 'services.html#reporting' },
+        { label: 'Website and App Development', href: 'services.html#webdev' },
+        { label: 'Custom Development', href: 'services.html#custom' },
+      ],
+    },
     { label: 'Pricing', href: 'pricing.html' },
     { label: 'Portfolio', href: 'portfolio.html' },
     { label: 'About', href: 'about.html' },
@@ -24,10 +35,12 @@
     {
       title: 'Services',
       links: [
-        { label: 'GoHighLevel Setup', href: 'service-ghl.html' },
+        { label: 'GoHighLevel Setup & Migration', href: 'service-ghl.html' },
         { label: 'Workflow Automation', href: 'service-automation.html' },
-        { label: 'API Integrations', href: 'services.html#integrations' },
-        { label: 'Reporting Dashboards', href: 'services.html#reporting' },
+        { label: 'API Integrations & Custom Builds', href: 'services.html#integrations' },
+        { label: 'Reporting Dashboards & Analytics', href: 'services.html#reporting' },
+        { label: 'Website and App Development', href: 'services.html#webdev' },
+        { label: 'Custom Development', href: 'services.html#custom' },
       ],
     },
     {
@@ -68,8 +81,6 @@
     header.className = 'site-header';
     header.id = 'site-header';
 
-    const currentPage = getCurrentPage();
-
     header.innerHTML = `
       <div class="header-container">
         <a href="index.html" class="nav-logo-link" aria-label="${SITE_NAME} Home">
@@ -81,10 +92,21 @@
         </a>
 
         <nav class="nav-links" aria-label="Main navigation">
-          ${NAV_LINKS.map(
-            (link) =>
-              `<a href="${link.href}" class="nav-item ${isActive(link.href) ? 'active' : ''}">${link.label}</a>`
-          ).join('')}
+          ${NAV_LINKS.map((link) => {
+            if (link.children && link.children.length > 0) {
+              return `
+                <div class="nav-item-dropdown">
+                  <a href="${link.href}" class="nav-item ${isActive(link.href) ? 'active' : ''}">
+                    ${link.label} <span class="dropdown-arrow">▾</span>
+                  </a>
+                  <div class="dropdown-menu">
+                    ${link.children.map(child => `<a href="${child.href}" class="dropdown-item">${child.label}</a>`).join('')}
+                  </div>
+                </div>
+              `;
+            }
+            return `<a href="${link.href}" class="nav-item ${isActive(link.href) ? 'active' : ''}">${link.label}</a>`;
+          }).join('')}
         </nav>
 
         <div class="header-cta">
@@ -101,10 +123,19 @@
       <div class="mobile-overlay" id="mobile-overlay"></div>
 
       <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-        ${NAV_LINKS.map(
-          (link) =>
-            `<a href="${link.href}" class="nav-item ${isActive(link.href) ? 'active' : ''}">${link.label}</a>`
-        ).join('')}
+        ${NAV_LINKS.map((link) => {
+          if (link.children && link.children.length > 0) {
+            return `
+              <div class="mobile-nav-group">
+                <a href="${link.href}" class="nav-item ${isActive(link.href) ? 'active' : ''}">${link.label}</a>
+                <div class="mobile-sub-menu">
+                  ${link.children.map(child => `<a href="${child.href}" class="mobile-sub-item">${child.label}</a>`).join('')}
+                </div>
+              </div>
+            `;
+          }
+          return `<a href="${link.href}" class="nav-item ${isActive(link.href) ? 'active' : ''}">${link.label}</a>`;
+        }).join('')}
         <a href="https://calendly.com/autoscalehqnow-info/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: auto;">
           Book a Call <span class="arrow">→</span>
         </a>
